@@ -69,5 +69,5 @@ def lambda_handler(event, context):
     latlng = content["latlng"]
     db.insert(table='activity_streams', json_data=content)
     return json.dumps({
-        "latng_length": len(latlng)
+        "latlng": latlng
     })
